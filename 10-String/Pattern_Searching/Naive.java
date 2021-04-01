@@ -17,4 +17,10 @@ public class Naive {
         System.out.println(i);
     }
   }
+
+  public static void main(String[] args) {
+    String txt = "GEEKSFORGEEKS";
+    String pat = "EKS";
+    naive(txt, pat);
+  }
 }
