@@ -30,6 +30,7 @@ public class StackUsingQueue {
     }
 
     static void push(int x) {
+      curr_size++;
       q2.add(x);
       while (!q1.isEmpty()) {
         q2.add(q1.peek());
