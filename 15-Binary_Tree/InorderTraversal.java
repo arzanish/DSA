@@ -12,7 +12,7 @@ public class InorderTraversal {
 
   }
 
-  static void inorder(Node root) {
+  public static void inorder(Node root) {
     if (root != null) {
       inorder(root.left);
       System.out.print(root.key + " ");
