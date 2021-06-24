@@ -21,7 +21,8 @@ public class TrappingRainWater {
   }
 
   public static void main(String[] args) {
-    int arr[] = { 5, 0, 5, 2, 3 };
+    // int arr[] = { 5, 0, 5, 2, 3 };
+    int arr[] = { 7, 4, 0, 9 };
     System.out.println(trappingRainWater(arr, arr.length));
   }
 }
