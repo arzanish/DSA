@@ -28,13 +28,16 @@ class Node {
 
 class Queue {
   Node front, rear;
+  int size;
 
   public Queue() {
     this.front = this.rear = null;
+    size = 0;
   }
 
   void enqueue(int data) {
     Node temp = new Node(data);
+    size++;
 
     if (this.front == null) {
       this.front = this.rear = temp;
@@ -48,11 +51,16 @@ class Queue {
     if (this.front == null)
       return;
     Node temp = this.front;
+    size--;
     this.front = this.front.next;
 
     if (this.front == null)
       this.rear = null;
 
+  }
+
+  int getSize() {
+    return size;
   }
 
 }
